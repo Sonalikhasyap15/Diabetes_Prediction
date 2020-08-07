@@ -12,4 +12,3 @@ Deployed at: https://early-diabetes-pred.herokuapp.com/
 • A glimpse of the web app:
 
 ![GIF](readme_resources/Capture.GIF)
-https://early-diabetes-pred.herokuapp.com/
