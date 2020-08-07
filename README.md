@@ -7,7 +7,6 @@
 
 • If you want to view the deployed model, click on the following link:<br />
 Deployed at: https://early-diabetes-pred.herokuapp.com/
-
 • Please do ⭐ the repository, if it helped you in anyway.
 
 • A glimpse of the web app:
