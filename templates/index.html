@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Early stage diabetes risk prediction</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Early stage diabetes risk prediction</span></h2>
+            <div class='description'>
+    			<p>Check whether you are having diabetes or not with a new path.</p>
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+                <input class="form-input" type="text" name="Age" placeholder="Age eg. 54">
+                <br>
+                <select class="form-input" name="Obesity">
+                    <option value="">Obesity</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                <br>
+                <select class="form-input" name="Gender">
+                    <option value="">Gender</option>
+                    <option value="0">Female</option>
+                    <option value="1">Male</option>
+                </select>
+                <br>
+                <select class="form-input" name="Polyuria">
+                    <option value="">Polyuria</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                <br>
+                <select class="form-input" name="Polydipsia">
+                    <option value="">Polydipsia</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                <br>
+                <select class="form-input" name="sudden_weight_loss">
+                    <option value="">Sudden Weight Loss</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                <br>
+                <select class="form-input" name="weakness">
+                    <option value="">Weakness</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                <br>
+                <select class="form-input" name="Polyphagia">
+                    <option value="">Polyphagia</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                <br>
+                <select class="form-input" name="Genital_thrush">
+                    <option value="">Genital Thrush</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                <br>
+                <select class="form-input" name="visual_blurring">
+                    <option value="">Visual Blurring</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                <br>
+                <select class="form-input" name="Itching">
+                    <option value="">Itching</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                <br>
+                <select class="form-input" name="Irritability">
+                    <option value="">Irritability</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                <br>
+                <select class="form-input" name="delayed_healing">
+                    <option value="">Delayed Healing</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                <br>
+                <select class="form-input" name="partial_paresis">
+                    <option value="">Partial Paresis</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                <br>
+                <select class="form-input" name="muscle_stiffness">
+                    <option value="">Muscle Stiffness</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                <br>
+                <select class="form-input" name="Alopecia">
+                    <option value="">Alopecia</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                <br>
+                <input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/Sonalikhasyap15"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/sonali-kumari-090725199/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made with ❤️ by TeamOutliers.</p>
+       </div>
+
+    </body>
+</html>
