@@ -6,7 +6,7 @@
 • Dataset link: https://archive.ics.uci.edu/ml/datasets/Early+stage+diabetes+risk+prediction+dataset.
 
 • If you want to view the deployed model, click on the following link:<br />
-Deployed at: _ _
+Deployed at: https://early-diabetes-pred.herokuapp.com/
 
 • Please do ⭐ the repository, if it helped you in anyway.
 
